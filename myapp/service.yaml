@@ -1,25 +1,25 @@
-nd: Service
+
+
+kind: Service
 
 apiVersion: v1
 
 metadata:
 
-          name: myapp
+  name: secondapp
 
-            spec:
+spec:
 
-                        selector:
+  selector:
 
-                                      app: myapp
+    app: secondapp
 
-                                          type: NodePort
+  type: NodePort
 
-                                              ports:
+  ports:
 
-                                                            - protocol: TCP
+  - protocol: TCP
 
-                                                                      port: 8080
+    port: 80 
 
-                                                                              nodePort: 31700
-
-
+    nodePort: 31700
