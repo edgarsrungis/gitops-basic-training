@@ -1,0 +1,11 @@
+piVersion: v1
+
+kind: ConfigMap
+
+metadata:
+
+          name: myapp
+
+          data: index.html
+
+
